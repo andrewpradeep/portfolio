@@ -1,24 +1,9 @@
-:root {
-  --primary-color : #352aff;
-  --secondary-color: #FAFBFF;
-  --text-base-color : #1d1e20;
-}
-html, body {
-  margin:0px;
-  padding: 0;
-  width: 100%;
-  height:100%;
-  box-sizing: border-box;
-  background-color: var(--secondary-color);
-  color: var(--text-base-color);
-}
 
 
 #root {
   width: 100%;
   margin: 0 auto;
-  text-align: center;
-  height: 100%;
+  vertical-align: top;
 }
 
 .page {

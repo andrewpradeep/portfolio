@@ -1,13 +1,14 @@
 import React from "react";
 import "./index.css";
 import Logo from "../Logo";
+import personalLogo from "../../assets/personalLogo.svg";
 
 const NavigationHeader: React.FC<any> = () => {
     return (
-        <div className="nav-header">
+        <header className="nav-header">
             <div className="nav-header-block lhs">
-                <Logo />
-                <span className="logo-title">Portfolio</span>
+                <Logo logoUrl={personalLogo} />
+                <span className="logo-title">Pradeep Jawahar</span>
             </div>
             <ul className="nav-header-block rhs">
                 <li className="nav-item">About</li>
@@ -15,7 +16,7 @@ const NavigationHeader: React.FC<any> = () => {
                 <li className="nav-item">Projects</li>
                 <li className="nav-item">Contact</li>
             </ul>
-        </div>
+        </header>
     );
 };
 

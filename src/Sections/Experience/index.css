@@ -1,0 +1,93 @@
+.exp-section{
+    padding: 3rem;
+    margin: 2rem 0 2rem 0;
+
+    .exp-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        text-align: center;
+        h2{
+            margin-bottom: 0.5rem;
+        }
+        p{
+            width: 60%;
+        }
+    }
+
+
+    .exp-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .exp-box {
+            width: 37%;
+            height: 25rem;
+            background-color: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+            color: #141c3a;
+            padding: 3rem;
+            padding-top:1rem ;
+            
+
+            .exp-title{
+                margin-bottom: 1.5rem;
+            }
+
+            .exp-content{
+                margin-bottom: 1.5rem;
+            }
+
+            .exp-tech-list{
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+
+                .exp-tech-item{
+                    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+                    background-color: var(--primary-color);
+                    color: white ;
+                    border-radius: 999px;
+                    margin: 0.5rem;
+                }
+            }
+        }
+        .logo-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .exp-logo{
+                img {
+                    width: 7rem;
+                    height: 5rem;
+                } 
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 960px){
+    .exp-section {
+        .exp-container{
+            flex-direction: column;
+
+            .exp-box {
+                width: 60%;
+                margin-bottom: 2rem;
+                .logo-container{
+                    .exp-logo{
+                        img {
+                            width: 9rem;
+                        } 
+                    }
+                }
+            }
+            
+        }
+    }
+}
