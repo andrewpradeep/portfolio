@@ -56,7 +56,7 @@ const ExperienceSection: React.FC = () => {
                             <Logo
                                 logoUrl="https://assets-global.website-files.com/5d9c347f1416aefa5128c8c3/6391c7144eace998108cfaa7_Frame.svg"
                                 alt="Zomentum logo"
-                                className="exp-logo"
+                                className="exp-logo zomentum"
                             />
                         </a>
                     </div>
@@ -82,7 +82,7 @@ const ExperienceSection: React.FC = () => {
                     <ul className="exp-tech-list">
                         <li className="exp-tech-item">React</li>
                         <li className="exp-tech-item">Typescript</li>
-                        <li className="exp-tech-item">Tailwind CSS</li>
+                        <li className="exp-tech-item">Tailwind</li>
                     </ul>
                 </div>
             </div>

@@ -14,13 +14,10 @@ const IntroSection: React.FC = () => {
                 <h2 className="mb1">I build things and try to write 😅</h2>
 
                 <p className="intro-content">
-                    I am a Frontend Engineer with 5 years of experience in
-                    building scalable, responsive, and maintainable web
-                    applications. Proficient in HTML, CSS, JavaScript, and
-                    various frontend frameworks and libraries. I like to work on
-                    different technologies and things that intrigue me. My
-                    latest endeavor is three.js. Soon be adding some 3d models
-                    or projects based on three.js or webgl.
+                    Frontend Engineer with 5 years of experience in building
+                    scalable, responsive, and maintainable web applications.
+                    Proficient in HTML, CSS, JavaScript, and various frontend
+                    frameworks and libraries.
                 </p>
 
                 <p className="intro-content">stay tuned...</p>

@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import Logo from "../Logo";
 import personalLogo from "../../assets/personalLogo.svg";
+import Resume from "../../assets/resume/Pradeep_Jawahar_Resume.pdf";
 
 const NavigationHeader: React.FC<any> = () => {
     return (
@@ -10,12 +11,10 @@ const NavigationHeader: React.FC<any> = () => {
                 <Logo logoUrl={personalLogo} />
                 <span className="logo-title">Pradeep Jawahar</span>
             </div>
-            <ul className="nav-header-block rhs">
-                <li className="nav-item">About</li>
-                <li className="nav-item">Experience</li>
-                <li className="nav-item">Projects</li>
-                <li className="nav-item">Contact</li>
-            </ul>
+
+            <a className={`nav-header-block rhs`} href={Resume} download>
+                <button className="resume-item">Resume</button>
+            </a>
         </header>
     );
 };
