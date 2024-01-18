@@ -3,6 +3,7 @@ import "./index.css";
 import textEditorSvg from "../../assets/projects/text-editor.svg";
 import AudioVisualizer from "../../assets/projects/AudioVisualizer.jpeg";
 import Logo from "../../Components/Logo";
+import CreamBoardIcon from "../../assets/projects/CreamBoard.avif";
 
 const ProjectSection: React.FC = () => {
     return (
@@ -16,6 +17,29 @@ const ProjectSection: React.FC = () => {
                 </p>
             </div>
             <div className="prj-container">
+                <div className="prj-box">
+                    <div className="prj-box-header">
+                        <Logo
+                            logoUrl={CreamBoardIcon}
+                            className="editor-logo"
+                        />
+                        <h3 className="prj-title">
+                            <a
+                                href="https://creamboard.netlify.app/"
+                                target="_blank"
+                            >
+                                Cream Board
+                            </a>
+                        </h3>
+                    </div>
+                    <div className="prj-desc">
+                        Created an project similar to an white board using
+                        canvas api. It contains basic shapes and line that you
+                        can use to build a flow diagram of sort. Will be adding
+                        new features and migrate it to webgl
+                    </div>
+                </div>
+
                 <div className="prj-box">
                     <div className="prj-box-header">
                         <Logo
