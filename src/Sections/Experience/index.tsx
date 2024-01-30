@@ -16,7 +16,12 @@ const ExperienceSection: React.FC = () => {
             <div className="exp-container">
                 <div className="exp-box">
                     <div className="logo-container">
-                        <a className="link">
+                        <a
+                            className="link"
+                            href="https://www.zoho.com/salesiq/"
+                            target="_blank"
+                            aria-label="Zoho"
+                        >
                             <Logo
                                 logoUrl="https://www.zohowebstatic.com/sites/zweb/images/commonroot/zoho-logo-web.svg"
                                 alt="Zoho logo"
@@ -52,7 +57,12 @@ const ExperienceSection: React.FC = () => {
 
                 <div className="exp-box">
                     <div className="logo-container">
-                        <a className="link">
+                        <a
+                            className="link"
+                            href="https://www.zomentum.com/"
+                            aria-label="Zomentum"
+                            target="_blank"
+                        >
                             <Logo
                                 logoUrl="https://assets-global.website-files.com/5d9c347f1416aefa5128c8c3/6391c7144eace998108cfaa7_Frame.svg"
                                 alt="Zomentum logo"

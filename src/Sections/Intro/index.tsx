@@ -6,7 +6,11 @@ const IntroSection: React.FC = () => {
     return (
         <section className="intro-section">
             <div className="intro-partition">
-                <img className="intro-portfolio-img" src={portfolio}></img>
+                <img
+                    className="intro-portfolio-img"
+                    src={portfolio}
+                    alt="intro-image"
+                ></img>
             </div>
             <div className="intro-partition">
                 <h2 className="mb1">Hi, I'm</h2>

@@ -9,7 +9,11 @@ import "./index.css";
 const ConclusionSection: React.FC = () => {
     return (
         <footer className="conclustion-section">
-            <Logo className="conclustion-logo" logoUrl={personalLogo} />
+            <Logo
+                className="conclustion-logo"
+                logoUrl={personalLogo}
+                alt="personal-logo"
+            />
             <h3 className="wisdom-class">
                 Learn, Build, Fail and grow as you go in this path{" "}
             </h3>
@@ -19,21 +23,26 @@ const ConclusionSection: React.FC = () => {
                         <a
                             target="blank"
                             href="https://www.linkedin.com/in/andrew-pradeep-073495123/"
+                            aria-label="Linkedin"
                         >
-                            <Logo logoUrl={Linkedin} />
+                            <Logo logoUrl={Linkedin} alt="linkedin link logo" />
                         </a>
                     </li>
                     <li className="link-item">
                         <a
                             target="blank"
                             href="https://github.com/andrewpradeep"
+                            aria-label="Github"
                         >
-                            <Logo logoUrl={Github} />
+                            <Logo logoUrl={Github} alt="github link logo" />
                         </a>
                     </li>
                     <li className="link-item">
-                        <a href="mailto:andrewpradeep13@gmail.com">
-                            <Logo logoUrl={Mail} />
+                        <a
+                            href="mailto:andrewpradeep13@gmail.com"
+                            aria-label="mail"
+                        >
+                            <Logo logoUrl={Mail} alt="Mail link Icon" />
                         </a>
                     </li>
                 </ul>

@@ -22,6 +22,7 @@ const ProjectSection: React.FC = () => {
                         <Logo
                             logoUrl={CreamBoardIcon}
                             className="editor-logo"
+                            alt="cream board Icon"
                         />
                         <h3 className="prj-title">
                             <a
@@ -45,6 +46,7 @@ const ProjectSection: React.FC = () => {
                         <Logo
                             logoUrl={AudioVisualizer}
                             className="editor-logo"
+                            alt="Audio visualizer"
                         />
                         <h3 className="prj-title">Audio Visualizer</h3>
                     </div>
@@ -59,7 +61,11 @@ const ProjectSection: React.FC = () => {
 
                 <div className="prj-box">
                     <div className="prj-box-header">
-                        <Logo logoUrl={textEditorSvg} className="editor-logo" />
+                        <Logo
+                            logoUrl={textEditorSvg}
+                            className="editor-logo"
+                            alt="text-editor"
+                        />
                         <h3 className="prj-title">NewGen Editor</h3>
                     </div>
                     <div className="prj-desc">

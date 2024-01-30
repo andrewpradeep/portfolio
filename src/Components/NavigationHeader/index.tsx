@@ -4,11 +4,11 @@ import Logo from "../Logo";
 import personalLogo from "../../assets/personalLogo.svg";
 import Resume from "../../assets/resume/Pradeep_Jawahar_Resume.pdf";
 
-const NavigationHeader: React.FC<any> = () => {
+const NavigationHeader: React.FC = () => {
     return (
         <header className="nav-header">
             <div className="nav-header-block lhs">
-                <Logo logoUrl={personalLogo} />
+                <Logo logoUrl={personalLogo} alt="personal-logo" />
                 <span className="logo-title">Pradeep Jawahar</span>
             </div>
 
