@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+    <title id="title">Audio visualizer project icon</title>
+    <rect width="96" height="96" rx="22" fill="#F0FDFA" />
+    <path d="M24 64V45M36 64V32M48 64V22M60 64V38M72 64V28" stroke="#0F172A" stroke-width="7"
+        stroke-linecap="round" />
+    <path d="M24 64V53M36 64V45M48 64V38M60 64V50M72 64V44" stroke="#14B8A6" stroke-width="7"
+        stroke-linecap="round" />
+    <path d="M22 74h52" stroke="#1D4ED8" stroke-width="4" stroke-linecap="round" />
+</svg>
