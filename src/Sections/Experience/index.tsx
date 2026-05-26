@@ -17,11 +17,19 @@ const ExperienceSection: React.FC = () => {
             <div className="exp-container">
                 <div className="exp-box">
                     <div className="logo-container">
-                        <Logo
-                            logoUrl={findemLogo}
-                            alt="Findem logo"
-                            className="exp-logo findem"
-                        />
+                        <a
+                            className="link"
+                            href="https://www.findem.ai/"
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label="Findem"
+                        >
+                            <Logo
+                                logoUrl={findemLogo}
+                                alt="Findem logo"
+                                className="exp-logo findem"
+                            />
+                        </a>
                     </div>
 
                     <div className="exp-title">
