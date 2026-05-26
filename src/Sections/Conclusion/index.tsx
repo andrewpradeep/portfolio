@@ -15,13 +15,15 @@ const ConclusionSection: React.FC = () => {
                 alt="personal-logo"
             />
             <h3 className="wisdom-class">
-                Learn, Build, Fail and grow as you go in this path{" "}
+                Building thoughtful interfaces with a focus on clarity,
+                performance, and user experience.
             </h3>
             <div className="link-section">
                 <ul className="link-list">
                     <li className="link-item">
                         <a
-                            target="blank"
+                            target="_blank"
+                            rel="noreferrer"
                             href="https://www.linkedin.com/in/andrew-pradeep-073495123/"
                             aria-label="Linkedin"
                         >
@@ -30,7 +32,8 @@ const ConclusionSection: React.FC = () => {
                     </li>
                     <li className="link-item">
                         <a
-                            target="blank"
+                            target="_blank"
+                            rel="noreferrer"
                             href="https://github.com/andrewpradeep"
                             aria-label="Github"
                         >
@@ -49,8 +52,8 @@ const ConclusionSection: React.FC = () => {
             </div>
             <h3 className="conc-insp">
                 Inspired by{" "}
-                <a target="blank" href="https://mattfarley.ca/">
-                    @mattfarly
+                <a target="_blank" rel="noreferrer" href="https://mattfarley.ca/">
+                    @mattfarley
                 </a>
             </h3>
         </footer>

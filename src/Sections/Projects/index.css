@@ -1,7 +1,6 @@
 .prj-section{
-    padding: 3rem;
-    margin: 2rem 0 2rem 0;
-    background-color: var(--primary-color);
+    padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 6vw, 5rem);
+    background: linear-gradient(135deg, var(--primary-dark), #1e3a8a);
 
     .prj-header{
         color: var(--text-secondary-color);
@@ -11,12 +10,16 @@
         flex-direction: column;
         margin-bottom: 2rem;
         text-align: center;
-        line-height: 1.5rem;
+        line-height: 1.7;
         h2{
-            margin-bottom: 1rem;
+            margin-bottom: 0.85rem;
+            color: white;
+            font-size: clamp(2rem, 4vw, 3rem);
         }
         p{
-            width: 60%;
+            max-width: 42rem;
+            width: 100%;
+            color: rgba(248, 250, 252, 0.76);
         }
 
         @media screen and (max-width: 600px){
@@ -25,64 +28,75 @@
     }
     
     .prj-container{
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: minmax(0, 36rem);
+        justify-content: center;
+        gap: 1.5rem;
         @media screen and (max-width: 960px){
-            flex-direction: column;
-            align-items: center;
+            grid-template-columns: 1fr;
         }
         .prj-box{
-            background-color: var(--secondary-color);
-            width: 35%;
-            @media screen and (max-width: 960px){
-                width: 75%;
-            }
-            margin: 2rem;
-            padding: 1rem;
-            line-height: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            box-shadow: 0 24px 55px rgba(15, 23, 42, 0.22);
+            padding: 1.5rem;
+            line-height: 1.7;
             border-radius: 1rem;
+            transition: transform 180ms ease, box-shadow 180ms ease;
+
+            &:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 30px 65px rgba(15, 23, 42, 0.28);
+            }
+
             .prj-box-header{
                 display: flex;
                 align-items: center;
-                
-                padding: 0 1rem 0 0;  
+                gap: 1rem;
+                margin-bottom: 1rem;
+
                 .prj-title{
-                    margin-left: 1rem;
+                    color: var(--primary-dark);
                     
                     a{
                         color: var(--primary-color);
                         text-decoration: none;
                     }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
                 }
 
                 img{
-                    width: 4rem;
-                    height: 6rem;
+                    width: 4.25rem;
+                    height: 4.25rem;
+                    border-radius: 1rem;
+                    object-fit: cover;
                 }
-
-                
             }
+
+            .prj-desc {
+                color: var(--text-muted-color);
+            }
+
             @media screen and (max-width: 1060px){
                 .prj-box-header{
-                    flex-direction: column;
+                    align-items: flex-start;
                     .prj-title{
                         margin-bottom: 0;
                     }
 
                     img{
-                        width: 5rem;
-                        height: 7rem;
+                        width: 4.5rem;
+                        height: 4.5rem;
                     }
                 }
 
                 .prj-desc{
-                    padding: 2rem;
-                    padding-top: 1rem;
+                    padding: 0;
                 }
             }
-            
-
-            
         }
     }
 }
