@@ -3,26 +3,41 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: clamp(2rem, 5vw, 5rem);
+    gap: clamp(2rem, 5vw, 4rem);
     flex-direction: row;
     padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 6vw, 5rem);
     border-bottom: 1px solid var(--border-color);
-     
-    h1{
+
+    .intro-partition {
+        width: min(50%, 36rem);
+    }
+
+    .intro-partition-visual {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-name {
         font-size: clamp(3rem, 7vw, 5.8rem);
-        max-width: 11ch;
+        max-width: 12ch;
         margin-bottom: 1rem;
     }
 
-    h2 {
-        max-width: 16ch;
+    .intro-greeting {
+        margin-bottom: 0.35rem;
         color: var(--primary-dark);
-        font-size: clamp(1.45rem, 3vw, 2.4rem);
+        font-size: clamp(1.45rem, 3vw, 2rem);
         font-weight: 700;
     }
-    
-    .intro-partition {
-        width: min(50%, 36rem);
+
+    .intro-tagline {
+        max-width: 30ch;
+        margin-bottom: 1rem;
+        color: var(--primary-dark);
+        font-size: clamp(1.35rem, 2.8vw, 2rem);
+        font-weight: 700;
+        line-height: 1.35;
     }
 
     .intro-eyebrow {
@@ -39,15 +54,6 @@
         text-transform: uppercase;
     }
 
-    .intro-portfolio-img {
-        object-fit: contain;
-        height: auto;
-        width: 100%;
-        max-height: 35rem;
-        border-radius: 2rem;
-        filter: drop-shadow(0 22px 35px rgba(15, 23, 42, 0.18));
-    }
-
     .intro-content{
         max-width: 39rem;
         margin-top: 1.5rem;
@@ -56,12 +62,26 @@
         line-height: 1.8;
     }
 
+    .intro-skill-groups {
+        display: grid;
+        gap: 1.25rem;
+        max-width: 39rem;
+        margin-top: 1.5rem;
+    }
+
+    .intro-skill-label {
+        margin-bottom: 0.65rem;
+        color: var(--primary-dark);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
     .intro-skill-list {
         display: flex;
         flex-wrap: wrap;
         gap: 0.65rem;
-        max-width: 39rem;
-        margin-top: 1.5rem;
         list-style: none;
 
         li {
@@ -78,9 +98,8 @@
 }
 
 
-@media  screen and (max-width: 960px){
+@media screen and (max-width: 960px){
     .intro-section{
-        display: flex;
         min-height: auto;
         flex-direction: column;
         padding-top: 2.5rem;
@@ -90,18 +109,14 @@
             padding: 0;
         }
 
-        h1 {
+        .intro-name {
             font-size: clamp(2.45rem, 12vw, 4rem);
         }
 
-        h2,
+        .intro-tagline,
         .intro-content,
-        .intro-skill-list {
+        .intro-skill-groups {
             max-width: none;
         }
     }
 }
-
-
-
-

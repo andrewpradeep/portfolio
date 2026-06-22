@@ -1,21 +1,27 @@
 import React from "react";
 import Logo from "../../Components/Logo";
 import findemLogo from "../../assets/company/findem.svg";
+import zomentumLogo from "../../assets/company/zomentum.svg";
+import zohoLogo from "../../assets/company/zoho.svg";
 import "./index.css";
 
 const ExperienceSection: React.FC = () => {
     return (
-        <section className="exp-section">
+        <section
+            className="exp-section"
+            id="experience"
+            aria-labelledby="experience-heading"
+        >
             <div className="exp-header">
-                <h2>Experience</h2>
+                <h2 id="experience-heading">Experience</h2>
                 <p>
-                    Resume-backed impact across ATS workflows, MCP-enabled AI
-                    systems, async operations, webhooks, document automation,
-                    real-time communication, and frontend performance.
+                    Impact across AI-driven features, agentic workflows,
+                    micro-frontends, async operations, REST APIs, real-time
+                    communication, and frontend performance.
                 </p>
             </div>
             <div className="exp-container">
-                <div className="exp-box">
+                <article className="exp-box">
                     <div className="logo-container">
                         <a
                             className="link"
@@ -28,53 +34,64 @@ const ExperienceSection: React.FC = () => {
                                 logoUrl={findemLogo}
                                 alt="Findem logo"
                                 className="exp-logo findem"
+                                width={48}
+                                height={48}
                             />
                         </a>
                     </div>
 
                     <div className="exp-title">
-                        <span>
-                            <h2>Senior Software Engineer</h2>
-                        </span>
-                        <span>Apr 2024 - Present</span>
+                        <h3>Senior Software Engineer</h3>
+                        <p className="exp-company">Findem</p>
+                        <p className="exp-date">Apr 2024 - Present</p>
                     </div>
 
                     <div className="exp-content">
                         <ul className="exp-highlight-list">
                             <li>
-                                Engineered core Applicant Tracking System
-                                features and onboarding workflows to improve
-                                candidate progression and data accuracy.
+                                Collaborated within a cross-functional,
+                                international team to design and ship high-impact
+                                AI-driven features and tracking frameworks.
                             </li>
                             <li>
-                                Built an MCP-based agentic workflow to securely
-                                expose internal applicant tracking data to LLMs
-                                for candidate screening and shortlisting.
+                                Engineered an MCP-based agentic workflow to
+                                securely expose internal applicant tracking data
+                                to LLMs, optimizing candidate screening.
                             </li>
                             <li>
-                                Architected an asynchronous operations framework
-                                with real-time progress, automated error
-                                tracking, and dynamic retries, eliminating stale
-                                UI support tickets.
+                                Integrated acquired SaaS product via route-based
+                                micro-frontends and built cross-stack data sync,
+                                directly increasing upsell by 15%.
                             </li>
                             <li>
-                                Designed high-throughput webhooks and automation
-                                pipelines for an acquired SaaS integration,
-                                contributing to a 15% upsell revenue increase.
+                                Architected a centralized asynchronous operations
+                                UI framework to track high-volume workflows,
+                                eliminating a major category of support tickets.
+                            </li>
+                            <li>
+                                Built end-to-end logic for core ATS features and
+                                onboarding workflows, streamlining candidate
+                                progression and data accuracy.
+                            </li>
+                            <li>
+                                Embedded custom debugging instructions into local
+                                Claude markdown skills to resolve candidate match
+                                scoring issues.
                             </li>
                         </ul>
                     </div>
 
-                    <ul className="exp-tech-list">
+                    <ul className="exp-tech-list" aria-label="Technologies used at Findem">
                         <li className="exp-tech-item">React</li>
                         <li className="exp-tech-item">Node.js</li>
+                        <li className="exp-tech-item">Scala</li>
                         <li className="exp-tech-item">MCP</li>
-                        <li className="exp-tech-item">Webhooks</li>
+                        <li className="exp-tech-item">Micro-frontends</li>
                         <li className="exp-tech-item">Claude Skills</li>
                     </ul>
-                </div>
+                </article>
 
-                <div className="exp-box">
+                <article className="exp-box">
                     <div className="logo-container">
                         <a
                             className="link"
@@ -84,113 +101,114 @@ const ExperienceSection: React.FC = () => {
                             rel="noreferrer"
                         >
                             <Logo
-                                logoUrl="https://assets-global.website-files.com/5d9c347f1416aefa5128c8c3/6391c7144eace998108cfaa7_Frame.svg"
+                                logoUrl={zomentumLogo}
                                 alt="Zomentum logo"
                                 className="exp-logo zomentum"
+                                width={144}
+                                height={48}
                             />
                         </a>
                     </div>
 
                     <div className="exp-title">
-                        <span>
-                            <h2>Software Developer</h2>
-                        </span>
-                        <span>Aug 2021 - Mar 2024</span>
+                        <h3>Software Developer</h3>
+                        <p className="exp-company">Zomentum</p>
+                        <p className="exp-date">Aug 2021 - Mar 2024</p>
                     </div>
 
                     <div className="exp-content">
                         <ul className="exp-highlight-list">
                             <li>
-                                Engineered and enhanced a web-based quoting and
-                                proposal management module for complex document
-                                workflows.
+                                Built and scaled Scala-based REST APIs using a BFF
+                                architecture to optimize data aggregation,
+                                minimizing payload overhead and accelerating
+                                integration.
                             </li>
                             <li>
-                                Optimized PDF generation latency by 66%,
-                                reducing customized document rendering from 3
-                                seconds to under 1 second.
+                                Optimized PDF generation latency, slashing
+                                rendering times by 66% (from 3s to under 1s) with
+                                dynamic headers, footers, and page numbering.
                             </li>
                             <li>
-                                Reduced digital signature process failures by
-                                33% by replacing unreliable internal logic with a
-                                stable third-party solution.
+                                Reduced digital signature process failures by 33%
+                                and raised satisfaction metrics by replacing
+                                internal logic with a stable PDFTron integration.
                             </li>
                             <li>
-                                Delivered intuitive, high-performance interfaces
-                                for quoting, proposal, and customer signature
-                                workflows.
+                                Engineered an interactive, high-performance
+                                quoting and proposal module with drag-and-drop
+                                capabilities and real-time editing.
                             </li>
                         </ul>
                     </div>
 
-                    <ul className="exp-tech-list">
+                    <ul className="exp-tech-list" aria-label="Technologies used at Zomentum">
+                        <li className="exp-tech-item">Scala</li>
                         <li className="exp-tech-item">React</li>
-                        <li className="exp-tech-item">Typescript</li>
-                        <li className="exp-tech-item">Tailwind</li>
-                        <li className="exp-tech-item">Jest</li>
-                        <li className="exp-tech-item">React Testing Library</li>
+                        <li className="exp-tech-item">TypeScript</li>
+                        <li className="exp-tech-item">PDFTron</li>
+                        <li className="exp-tech-item">REST APIs</li>
                     </ul>
-                </div>
+                </article>
 
-                <div className="exp-box">
+                <article className="exp-box">
                     <div className="logo-container">
                         <a
                             className="link"
                             href="https://www.zoho.com/salesiq/"
                             target="_blank"
                             rel="noreferrer"
-                            aria-label="Zoho"
+                            aria-label="Zoho SalesIQ"
                         >
                             <Logo
-                                logoUrl="https://www.zohowebstatic.com/sites/zweb/images/commonroot/zoho-logo-web.svg"
+                                logoUrl={zohoLogo}
                                 alt="Zoho logo"
-                                className="exp-logo"
+                                className="exp-logo zoho"
+                                width={96}
+                                height={48}
                             />
                         </a>
                     </div>
 
                     <div className="exp-title">
-                        <span>
-                            <h2>Frontend Developer</h2>
-                        </span>
-                        <span>May 2018 - Jul 2021</span>
+                        <h3>Software Developer</h3>
+                        <p className="exp-company">Zoho SalesIQ</p>
+                        <p className="exp-date">May 2018 - Jul 2021</p>
                     </div>
 
                     <div className="exp-content">
                         <ul className="exp-highlight-list">
                             <li>
-                                Led and mentored 3 junior engineers while
-                                building enterprise communication features,
-                                including file sharing, audio calling, message
-                                threads, and dynamic chat invitations.
+                                Engineered client-side logging and caching using
+                                IndexedDB with automated data expiry, reducing API
+                                traffic by 90% (10x).
                             </li>
                             <li>
-                                Architected a real-time communication engine
-                                using WebSockets and a PubSub pattern for live
-                                chat updates and modular listeners.
+                                Architected a real-time communication engine via
+                                WebSockets and a PubSub pattern to power live chat
+                                updates and dynamic modular listeners.
                             </li>
                             <li>
-                                Reduced API traffic by 90% with an
-                                IndexedDB-based client-side logging and caching
-                                system with automated expiry.
+                                Optimized application builds via Webpack chunk
+                                splitting and tree shaking, cutting load latency by
+                                60% to drop render times from 5s to under 2s.
                             </li>
                             <li>
-                                Cut initial page load latency by more than 60%,
-                                bringing render times from 5 seconds to under 2
-                                seconds with Webpack chunk splitting and tree
-                                shaking.
+                                Led and mentored a team of 3 engineers to deliver
+                                enterprise file sharing and audio calling features,
+                                boosting velocity by 10%.
                             </li>
                         </ul>
                     </div>
 
-                    <ul className="exp-tech-list">
-                        <li className="exp-tech-item">Javascript</li>
+                    <ul className="exp-tech-list" aria-label="Technologies used at Zoho SalesIQ">
+                        <li className="exp-tech-item">JavaScript</li>
                         <li className="exp-tech-item">Vue</li>
-                        <li className="exp-tech-item">Less</li>
                         <li className="exp-tech-item">WebSocket</li>
                         <li className="exp-tech-item">Webpack</li>
+                        <li className="exp-tech-item">IndexedDB</li>
                     </ul>
-                </div>
+                </article>
             </div>
         </section>
     );

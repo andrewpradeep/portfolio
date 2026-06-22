@@ -5,22 +5,27 @@ import Logo from "../../Components/Logo";
 
 const ProjectSection: React.FC = () => {
     return (
-        <section className="prj-section">
+        <section
+            className="prj-section"
+            id="projects"
+            aria-labelledby="projects-heading"
+        >
             <div className="prj-header">
-                <h2>Projects</h2>
+                <h2 id="projects-heading">Projects</h2>
                 <p className="prj-header-desc">
-                    A selected personal project from my resume, focused on
-                    building canvas-driven product interactions without AI
-                    assistance.
+                    A collaborative whiteboard application built with React and
+                    TypeScript to explore canvas-driven product interactions.
                 </p>
             </div>
             <div className="prj-container">
-                <div className="prj-box">
+                <article className="prj-box">
                     <div className="prj-box-header">
                         <Logo
                             logoUrl={creamBoardIcon}
                             className="editor-logo"
-                            alt="cream board Icon"
+                            alt="CreamBoard icon"
+                            width={68}
+                            height={68}
                         />
                         <h3 className="prj-title">
                             <a
@@ -28,17 +33,16 @@ const ProjectSection: React.FC = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                Cream Board
+                                CreamBoard
                             </a>
                         </h3>
                     </div>
-                    <div className="prj-desc">
-                        A Miro-inspired whiteboard project built with the Canvas
-                        API. It supports limited but practical functionality,
-                        including shapes, lines, and drag interactions, and was
-                        implemented without the help of AI.
-                    </div>
-                </div>
+                    <p className="prj-desc">
+                        React/TypeScript whiteboard app featuring multi-workspace
+                        management, drawing tools, IndexedDB persistence, and
+                        PDF/PNG export.
+                    </p>
+                </article>
             </div>
         </section>
     );

@@ -28,12 +28,11 @@
         color: var(--primary-dark);
     }
 
-    .lhs .logo-img {
-        border-radius: 1.1rem;
-        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
-    }
-
     .resume-item{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
         background-color: var(--primary-color);
         border: 1px solid var(--primary-color);
         border-radius: 9999px;
@@ -53,13 +52,13 @@
         transform: translateY(-1px);
     }
 
+    .resume-item:focus-visible {
+        outline: 2px solid var(--primary-dark);
+        outline-offset: 3px;
+    }
+
     @media screen and (max-width:650px) {
         padding: 0.85rem 1rem;
-
-        .lhs .logo-img {
-            width: 3rem;
-            height: 3rem;
-        }
 
         .resume-item {
             padding: 0.6rem 0.95rem;

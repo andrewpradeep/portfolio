@@ -21,10 +21,6 @@
             width: 100%;
             color: rgba(248, 250, 252, 0.76);
         }
-
-        @media screen and (max-width: 600px){
-            width: 100%;
-        }
     }
     
     .prj-container{
@@ -32,9 +28,7 @@
         grid-template-columns: minmax(0, 36rem);
         justify-content: center;
         gap: 1.5rem;
-        @media screen and (max-width: 960px){
-            grid-template-columns: 1fr;
-        }
+
         .prj-box{
             background-color: rgba(255, 255, 255, 0.96);
             border: 1px solid rgba(255, 255, 255, 0.28);
@@ -55,8 +49,20 @@
                 gap: 1rem;
                 margin-bottom: 1rem;
 
+                .editor-logo {
+                    width: 4.25rem;
+                    height: 4.25rem;
+                    flex-shrink: 0;
+                }
+
+                .editor-logo .logo-img {
+                    border-radius: 1rem;
+                }
+
                 .prj-title{
+                    margin: 0;
                     color: var(--primary-dark);
+                    font-size: 1.35rem;
                     
                     a{
                         color: var(--primary-color);
@@ -66,37 +72,24 @@
                     a:hover {
                         text-decoration: underline;
                     }
-                }
 
-                img{
-                    width: 4.25rem;
-                    height: 4.25rem;
-                    border-radius: 1rem;
-                    object-fit: cover;
+                    a:focus-visible {
+                        outline: 2px solid var(--primary-color);
+                        outline-offset: 3px;
+                        border-radius: 0.25rem;
+                    }
                 }
             }
 
             .prj-desc {
                 color: var(--text-muted-color);
             }
-
-            @media screen and (max-width: 1060px){
-                .prj-box-header{
-                    align-items: flex-start;
-                    .prj-title{
-                        margin-bottom: 0;
-                    }
-
-                    img{
-                        width: 4.5rem;
-                        height: 4.5rem;
-                    }
-                }
-
-                .prj-desc{
-                    padding: 0;
-                }
-            }
         }
+    }
+}
+
+@media screen and (max-width: 960px){
+    .prj-section .prj-container {
+        grid-template-columns: 1fr;
     }
 }

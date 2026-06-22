@@ -1,4 +1,4 @@
-.conclustion-section{
+.conclusion-section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,13 +6,8 @@
     background: var(--surface-color);
     border-top: 1px solid var(--border-color);
 
-    .conclustion-logo{
+    .conclusion-logo{
         margin-bottom: 2rem;
-
-        .logo-img {
-            border-radius: 1.35rem;
-            box-shadow: 0 16px 35px rgba(15, 23, 42, 0.14);
-        }
     }
 
     .wisdom-class{
@@ -25,33 +20,40 @@
 
     .link-list {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         list-style: none;
         margin-top: 1rem;
+        gap: 0.5rem 1rem;
 
         .link-item{
-            margin: 1rem;
             transition: transform 180ms ease;
 
             &:hover {
                 transform: translateY(-3px);
             }
 
-            .logo-img{
+            a {
+                display: inline-flex;
+                border-radius: 999px;
+            }
+
+            a:focus-visible {
+                outline: 2px solid var(--primary-color);
+                outline-offset: 3px;
+            }
+
+            .logo {
                 width: 3.25rem;
                 height: 3.25rem;
+            }
+
+            .logo-img{
                 padding: 0.75rem;
                 border: 1px solid var(--border-color);
+                border-radius: 999px;
                 background: var(--secondary-color);
                 box-shadow: var(--shadow-sm);
-            }
-        }
-
-        @media screen and (max-width:850px) {
-            .link-item{
-                .logo-img{
-                    width: 3rem;
-                    height: 3rem;
-                }
             }
         }
     }
@@ -65,5 +67,22 @@
             font-weight: 700;
             text-decoration: none;
         }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 3px;
+            border-radius: 0.25rem;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .conclusion-section .link-list .link-item .logo {
+        width: 3rem;
+        height: 3rem;
     }
 }
